@@ -87,13 +87,14 @@
     .treinoA {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
+        gap: 40px;
     }
 
     .treinoA img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         background-color: rgb(87, 87, 87);
     }
 }
