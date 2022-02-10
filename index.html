@@ -3,17 +3,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <link rel="stylesheet" href="style.css">
+<title>Meu treino | Bluefit</title>
 
 <body ng-app="myApp" ng-controller="namesCtrl">
     <div>
         <div ng-repeat="x in perfil">
+            <img src="" alt="">
             <h4>NOME: {{x.nome}}</h4>
             <h4>IDADE: {{x.idade}} ANOS</h4>
             <h4>CÓDIGO: {{x.codigoAluno}} </h4>
-            <h4>TREINO: {{x.treino}} </h4>
+            <!-- <h4>TREINO: {{x.treino}} </h4> -->
             <h4>PROFESSOR: {{x.professor}} </h4>
             <h4>VENCIMENTO DO TREINO: {{x.vencimentoTreino}} </h4>
-            <h4>{{x.rotina}} </h4>
         </div>
     </div>
     <h4>ESCOLHA UM TREINO PARA COMEÇAR!</h4>
