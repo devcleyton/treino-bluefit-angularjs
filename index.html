@@ -6,22 +6,26 @@
 <title>Meu treino | Bluefit</title>
 
 <body ng-app="myApp" ng-controller="namesCtrl">
-    <div>
-        <div ng-repeat="x in perfil">
-            <img src="" alt="">
-            <h4>NOME: {{x.nome}}</h4>
-            <h4>IDADE: {{x.idade}} ANOS</h4>
-            <h4>CÓDIGO: {{x.codigoAluno}} </h4>
-            <!-- <h4>TREINO: {{x.treino}} </h4> -->
-            <h4>PROFESSOR: {{x.professor}} </h4>
-            <h4>VENCIMENTO DO TREINO: {{x.vencimentoTreino}} </h4>
+    <div class="container">
+        <div class="perfil">
+            <img src="img/img-perfil.png" alt="">
+            <div ng-repeat="x in perfil">
+                <h4>NOME: {{x.nome}}</h4>
+                <h4>IDADE: {{x.idade}} ANOS</h4>
+                <h4>CÓDIGO: {{x.codigoAluno}} </h4>
+                <!-- <h4>TREINO: {{x.treino}} </h4> -->
+                <h4>PROFESSOR: {{x.professor}} </h4>
+                <h4>VENCIMENTO DO TREINO: {{x.vencimentoTreino}} </h4>
+            </div>
         </div>
+        <div class="choice-train">
+            <h4>ESCOLHA UM TREINO PARA COMEÇAR!</h4>
+            <section class="buttons">
+                <a href="#!treinoA"><button>TREINO A</button></a>
+                <a href="#!treinoB"><button>TREINO B</button></a>
+        </div>
+        </section>
     </div>
-    <h4>ESCOLHA UM TREINO PARA COMEÇAR!</h4>
-    <section class="buttons">
-        <a href="#!treinoA"><button>TREINO A</button></a>
-        <a href="#!treinoB"><button>TREINO B</button></a>
-    </section>
     <div ng-view></div>
 
     <script src="script.js"></script>
