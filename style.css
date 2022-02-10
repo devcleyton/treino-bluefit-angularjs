@@ -4,24 +4,6 @@
     font-family: 'Poppins';
 }
 
-@media (min-width: 769px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    html, body {
-        background-color: black;
-    }
-
-    .mobile {
-        display: none;
-    }
-}
-
 @media (max-width: 768px) {
 
     body {
@@ -93,8 +75,12 @@
     }
 
     .treinoA img {
-        width: 200px;
-        height: 200px;
+        width: 35vw;
+        height: 20vh;
         background-color: rgb(87, 87, 87);
+    }
+
+    .treino {
+        width: 60vw;
     }
 }
