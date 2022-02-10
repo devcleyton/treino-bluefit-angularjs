@@ -33,7 +33,6 @@
         margin-top: 20px;
     }
 
-
     .perfil {
         display: flex;
         flex-direction: row;
@@ -61,7 +60,7 @@
     }
 
     .buttons a {
-        color: white;
+        color: rgb(226, 1, 1);
         text-decoration: none;
     }
 
@@ -71,11 +70,30 @@
         border-radius: 20px;
         background-color: transparent;
         border: 1px solid white;
+        color: white;
     }
 
     .buttons button:hover {
         background-color: white;
-        color: black;
+        color: rgb(38, 38, 38);
         border: 1px solid white;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .treinoA {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .treinoA img {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(87, 87, 87);
     }
 }
